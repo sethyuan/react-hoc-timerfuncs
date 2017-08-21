@@ -11,7 +11,7 @@
     "build": "babel src -d lib",
     "lint": "prettier --trailing-comma all --no-semi --write \"src/**/*.@(js|less|css)\" && eslint_d --fix src",
     "precommit": "lint-staged",
-    "prepublish": "yarn run cleanup && yarn build"
+    "prepare": "yarn run cleanup && yarn build"
   },
   "lint-staged": {
     "src/**/*.js": [
