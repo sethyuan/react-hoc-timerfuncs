@@ -1,7 +1,7 @@
 # react-hoc-timerfuncs
 
 This HOC (Higher Order Component) provides the following timer like functions
-via props that will automatically be cleared when component gets unmounted.
+via props that will get automatically cleared when component gets unmounted.
 Can be used with both React and React Native.
 
 - setTimeout
