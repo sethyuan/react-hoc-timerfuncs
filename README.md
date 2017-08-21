@@ -41,7 +41,7 @@ class Counter extends React.Component {
     // Instead of standard functions you will use the functions
     // provided by props.
     this.props.setInterval(() => {
-      this.setState(state => ({ counter: counter + 1 }))
+      this.setState(state => ({ counter: state.counter + 1 }))
     }, 10)
   }
 }
