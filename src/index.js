@@ -77,8 +77,8 @@ export default function timer(Comp) {
 
   // copy all static members except `displayName`
   // eslint-disable-next-line
-  const { displayName: ignored, ...props } = Comp
-  Object.assign(Timer, props)
+  const { displayName: ignored, ...members } = Comp
+  Object.assign(Timer, members)
 
   return Timer
 }
