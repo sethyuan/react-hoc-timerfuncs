@@ -1,6 +1,6 @@
 {
   "name": "react-hoc-timerfuncs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Timer functions provided via props that auto clear themselves at unmount",
   "main": "lib/index.js",
   "repository": "https://github.com/sethyuan/react-hoc-timer.git",

@@ -77,8 +77,14 @@ export default function timer(Comp) {
 
   // copy all static members except `displayName` and
   // `getDerivedStateFromProps`
-  // eslint-disable-next-line
-  const { displayName: ignored, getDerivedStateFromProps, ...members } = Comp
+  /* eslint-disable */
+  const {
+    displayName: ignored,
+    getDerivedStateFromProps,
+    childContextTypes,
+    ...members
+  } = Comp
+  /* eslint-enable */
   Object.assign(Timer, members)
 
   return Timer
